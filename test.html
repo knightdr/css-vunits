@@ -5,17 +5,71 @@
         <script type="text/javascript" src="css.vunits.min.js"></script>
         <script type="text/javascript">
             CSSVUnits.add({
+                selector    : 'body',
+                style       : {
+                    "margin"    : "5vh 5vw",
+                    "padding"   : "2vh 5vw",
+                    "border"    : "0.5vw solid #000"
+                }
+            });
+            
+            CSSVUnits.add({
+                selector    : 'h1',
+                style       : {
+                    "margin"            : "5vh auto 0",
+                    "max-width"         : "960px",
+                    "font-size"         : "5vmax",
+                    "text-transform"    : "uppercase",
+                    "line-height"       : "6vmax",
+                }
+            });
+            
+            CSSVUnits.add({
+                media       : 'screen and (min-width: 800px)',
+                selector    : 'h1',
+                style       : {
+                    "font-weight"   : "normal"
+                }
+            });
+            
+            CSSVUnits.add({
+                selector    : 'h2',
+                style       : {
+                    "margin"            : "1vh auto 0",
+                    "max-width"         : "960px",
+                    "font-size"         : "2vmax",
+                    "text-transform"    : "uppercase",
+                    "line-height"       : "3vmax",
+                    "letter-spacing"    : "5vw",
+                }
+            });
+            
+            CSSVUnits.add({
+                media       : 'screen and (min-width: 450px)',
                 selector    : 'p',
                 style       : {
-                    "margin"    : "10vh auto",
-                    "min-width" : "40vw",
-                    "max-width" : "960px",
-                    "font-size" : "3vmax",
+                    "margin"        : "5vh auto",
+                    "min-width"     : "200px",
+                    "max-width"     : "960px",
+                    "font-size"     : "3vmax",
+                    "line-height"   : "4.5vmax",
+                }
+            });
+            
+            CSSVUnits.add({
+                media       : 'screen and (max-width: 450px)',
+                selector    : 'p',
+                style       : {
+                    "margin"        : "2vh 5vw",
+                    "font-size"     : "4vmax",
+                    "line-height"   : "6vmax",
                 }
             });
         </script>
     </head>
     <body>
+        <h1>Relative viewport units</h1>
+        <h2>responsive</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat enim quis enim tincidunt sit amet varius quam consequat. 
             Phasellus tincidunt nisi nec tellus pulvinar aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
